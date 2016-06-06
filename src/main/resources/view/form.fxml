@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+
+<BorderPane id="root" fx:id="root" xmlns:fx="http://javafx.com/fxml/1"
+                 fx:controller="com.malsolec.controller.Controller">
+    <top>
+        <GridPane styleClass="bar">
+
+            <Label styleClass="label" fx:id="barLabel" text="Name:"/>
+
+        </GridPane>
+    </top>
+
+    <center>
+        <GridPane styleClass="content" alignment="CENTER" hgap="4" vgap="4">
+
+            <Button fx:id="buttonBack" styleClass="button_back" visible="false" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#back"/>
+
+
+            <TextField styleClass="text_field" fx:id="textFieldInput" onAction="#next"
+                       GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Button fx:id="buttonNext" styleClass="button_next" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#next"/>
+
+        </GridPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</BorderPane>

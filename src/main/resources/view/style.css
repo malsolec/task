@@ -1,0 +1,53 @@
+.button_next {
+    -fx-min-width: 30px;
+    -fx-background-radius: 5em;
+    -fx-min-height: 30px;
+    -fx-background-image: url("images/ic_chevron_right_white_24dp.png");
+    -fx-background-size: 100%;
+    -fx-background-color: #FFD54F;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button_next:hover {
+    -fx-background-image: url("images/ic_chevron_right_black_24dp.png");
+    -fx-background-radius: 5em;
+    -fx-background-color: #FFA000;
+}
+
+
+.button_back {
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-background-image: url("images/ic_keyboard_arrow_left_white_24dp.png");
+    -fx-background-size: 100%;
+    -fx-background-color: #FFD54F;
+    -fx-background-radius: 5em;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button_back:hover {
+    -fx-background-image: url("images/ic_keyboard_arrow_left_black_24dp.png");
+    -fx-background-color: #FFA000;
+    -fx-background-radius: 5em;
+}
+
+
+.label{
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.bar{
+    -fx-background-color: #009688;
+    -fx-padding: 7px;
+}
+
+.content{
+    -fx-background-color: #E0F2F1 ;
+}
+
+.summaryLabel{
+    -fx-font-size: 16px;
+    -fx-text-fill: black;
+}

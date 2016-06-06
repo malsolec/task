@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <GridPane styleClass="bar">
+
+            <Label styleClass="label" fx:id="barLabel" text="Summary:"/>
+
+        </GridPane>
+    </top>
+
+    <center>
+        <GridPane styleClass="content" alignment="CENTER" hgap="4" vgap="4">
+
+            <Label styleClass="summaryLabel" text="Name:"  GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Label styleClass="summaryLabel" fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label styleClass="summaryLabel" text="Surname:"  GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Label styleClass="summaryLabel" fx:id="surname" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label styleClass="summaryLabel" text="Address:"   GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Label styleClass="summaryLabel" fx:id="address" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Label styleClass="summaryLabel" text="Phone number:"  GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <Label styleClass="summaryLabel" fx:id="phoneNumber"  GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        </GridPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</BorderPane>
+
+
